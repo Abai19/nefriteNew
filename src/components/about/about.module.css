@@ -1,0 +1,23 @@
+.h2{
+    color:#2d2d2d
+}
+.textBlock p{
+    line-height: 22px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.main img{
+    /* width: 100%;
+  max-width: 350px;
+  height: auto; */
+  text-align: center;
+  width: 100%;
+  max-width: 440px;
+  /* height: auto;
+  max-height: 100%; */
+}
+.main div{
+    width: 45%;
+}

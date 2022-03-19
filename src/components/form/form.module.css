@@ -1,0 +1,32 @@
+.main{
+    background: #00a86b;
+    margin-top:60px;
+}
+.mainDiv{
+    padding:30px
+}
+h2 {
+    color:white
+}
+form{
+    width: 100%;
+}
+form input{
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #00a86b;
+    padding: 10px;  
+    border-radius: 5px;
+    margin-left:10px;
+    width:20%;
+
+}
+form button{
+    border: 2px solid #fff !important;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #00a86b;
+    padding: 10px;
+    margin-left:10px;
+
+}

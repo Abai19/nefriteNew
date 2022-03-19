@@ -1,0 +1,27 @@
+.mainBlock{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top: 40px;
+    color:#2d2d2d;
+}
+.main {
+    display:flex;
+    align-items: center;
+    line-height: 10px;
+}
+.icon{
+    background: #00a86b;
+    color:white;
+    border-radius: 50%;
+    font-size: 33px;
+    padding: 15px;
+}
+.info {
+    margin-left: 20px;
+}
+
+.info p:first-of-type{
+    font-weight: bold;
+    font-size: 18px;
+}

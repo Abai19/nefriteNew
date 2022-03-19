@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Nunito', sans-serif;
+  src: local("Nunito"),url("./fonts/Nunito/Nunito-Italic.ttf") format('truetype');
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+

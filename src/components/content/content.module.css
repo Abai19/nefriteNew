@@ -1,0 +1,46 @@
+.container{
+    margin-top: 20px;
+}
+.flowerWord{
+    margin-top: 30px;
+}
+.mainImg{
+    width: 100%;
+}
+.btn{
+    border: none;
+    background: #00a86b;
+    color:white;
+    padding:12px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    transition-duration: 0.4s;
+    border:2px solid #00a86b;
+    margin-bottom: 20px;
+}
+.flowerBlock a{
+    text-decoration: none;
+    color:#00a86b
+}
+.flowerBlock{
+    border: 1px solid #dedede;
+    box-shadow: 0 8px 21px -19px rgb(0 0 0 / 75%);
+    background: #fff;
+}
+.flowerText{
+    text-align: center;
+    color:#2d2d2d;
+    font-weight: bold;
+}
+.flowerMain{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.oldPrice{
+    color: #2d2d2d;
+    text-decoration: line-through;
+    opacity: 0.33;
+}
+
