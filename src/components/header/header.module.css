@@ -271,6 +271,12 @@ nav a {
     left:0;
     transition: 1s ease;
   }
+  nav li:hover > .submenu {
+
+    opacity: 0;
+    
+
+  }
   .slider ul{
     display:flex;
     flex-direction: column;
