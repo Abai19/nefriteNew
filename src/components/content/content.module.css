@@ -27,6 +27,11 @@
     border: 1px solid #dedede;
     box-shadow: 0 8px 21px -19px rgb(0 0 0 / 75%);
     background: #fff;
+    width: 23%;
+}
+.flowerBlock img{
+   min-width: 100%;
+
 }
 .flowerText{
     text-align: center;
@@ -43,4 +48,8 @@
     text-decoration: line-through;
     opacity: 0.33;
 }
-
+@media (max-width:900px){
+    .flowerBlock{
+        width: 48%;
+    }
+}

@@ -6,7 +6,7 @@
 }
 .container_content{
     display: flex;
-    justify-content: end;
+    justify-content:flex-end;
     align-items: center;
     border-bottom: 1px solid #dedede;
 }
@@ -16,7 +16,7 @@
 }
 .searchIconFa{
     width: 25px;
-    color: #00a86b;
+    color: green;
 }
 .shoppingIconFa{
     margin-right: 10px;
@@ -26,14 +26,15 @@
     outline: none; /* Убираем свечение в Chrome и Safari */
     vertical-align: middle; /* Выравнивание по середине */
     height: 28px;
-    width: 500px;
+    width:100%
    }
 .searchIcon {
     position: absolute;
     border: none; /* Убираем рамку */
     background: none;
-    right: 86px;
-    top: 9px;
+    right: 0px;
+    top: 4px;
+
     /* background: url('../../img/search.png') no-repeat 50% 50%; Параметры фона */
    }
 .btn{
@@ -53,6 +54,7 @@
     color:#00a86b
 }
 .shoppingCartBtn{
+  float: right;
     color:white;
     margin-left: 20px;
     border: none;
@@ -61,16 +63,18 @@
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
-.logoBlock{
+/* .logoBlock{
     width: 20%;
-}
+} */
 .searchBlock{
+    width: 40%;
     height: 30px;
     position: relative;
 }
 .containerSearch{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap:wrap;
     margin-top: 40px;
     align-items: center;
 }
@@ -272,10 +276,7 @@ nav a {
     transition: 1s ease;
   }
   nav li:hover > .submenu {
-
     opacity: 0;
-    
-
   }
   .slider ul{
     display:flex;
@@ -311,4 +312,13 @@ nav a {
   .close {
     font-size:40px;
   }
+  .logoBlock{
+    width: 100%;
+    text-align: center;
+  
+  }
+  .searchBlock{
+    width: 80%;
+  }
+
 }

@@ -14,8 +14,14 @@
 }
 .mainDivs{
     display: flex;
-    width: 90%;
     margin: 0 auto;
-    padding:60px;
+    padding:30px;
     justify-content: space-around;
+    flex-wrap:wrap
+}
+@media (max-width:900px){
+    .text{
+        text-align: center;
+        font-size:12px;
+    }
 }

@@ -21,3 +21,11 @@
 .main div{
     width: 45%;
 }
+@media(max-width:900px){
+    .main{
+        display: block;
+    }
+    .main div{
+        width: 100%;
+    }
+}

@@ -4,7 +4,7 @@ import logo from '../../img/logo.png'
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {MenuOutlined, Close, WhatsApp, Instagram} from "@material-ui/icons";
+import {MenuOutlined, Close, WhatsApp, Instagram, Search} from "@material-ui/icons";
 import {Link} from 'react-router-dom'
 
 const Header = () => {
@@ -22,20 +22,24 @@ const Header = () => {
                 </div>
                <tr/>
                <div className={styles.containerSearch}>
-               <img src={logo} className={styles.logoBlock}/>
-               <div className={styles.searchBlock}>
-                    
-                    <input className={styles.searchInput} placeholder="Поиск" />
-                    <button className={styles.searchIcon}>
-                    <FontAwesomeIcon icon={faSearch} class={styles.searchIconFa}/>
-                        </button> 
-                    
-                        <button className={styles.shoppingCartBtn}>    <FontAwesomeIcon icon={faCartShopping} 
+                   <div className={styles.logoBlock}>
+                   <img src={logo} />
+                   </div>
+              
+               
+               <div className={styles.searchBlock}> 
+                    <div className={styles.searchBlockInside}>
+                        <input className={styles.searchInput} placeholder="Поиск" />
+                        <button className={styles.searchIcon}>
+                        <Search  style={{ color: "green" }} class={styles.searchIconFa}/>
+                            </button> 
+                            
+                    </div>
+                </div>
+                <button className={styles.shoppingCartBtn}> <FontAwesomeIcon icon={faCartShopping} 
                         className={styles.shoppingIconFa} />
                         0
-                        </button>
-                </div>
-              
+                    </button>
                </div> 
                <div className={styles.header}>
                    <div className={styles.menuIcon}>
