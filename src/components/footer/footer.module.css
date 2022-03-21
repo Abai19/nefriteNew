@@ -2,7 +2,7 @@
     width: 200px;
     height: 100px;
 }
-.text{
+.title{
     color: #fff;
     font-weight: bold;
 }
@@ -20,8 +20,14 @@
     flex-wrap:wrap
 }
 @media (max-width:900px){
+    .title{
+        font-size:13px;
+    }
     .text{
-        text-align: center;
         font-size:12px;
+    }
+    .mainDivs{
+        padding:0px;
+        justify-content: flex-start;
     }
 }

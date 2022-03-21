@@ -1,6 +1,6 @@
-import styles from './header.module.css'
-import React, {useState} from 'react'
-import logo from '../../img/logo.png'
+import styles from './header.module.css';
+import React, {useState} from 'react';
+import logo1 from '../../img/logo.svg';
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,14 +16,18 @@ const Header = () => {
         <>
              <div>
                 <div className={styles.container_content}>
-                <Instagram className={styles.instaIcon}/>
-                     <WhatsApp className={styles.whatsIcon}/>
+                    <div className={styles.iconBlock}>  <Link to="/"> <Instagram className={styles.instaIcon}/></Link>  </div>
+                    <div className={styles.iconBlock}> <Link to="/"> <WhatsApp className={styles.whatsIcon}/></Link>  </div>
+            
+                 
                         <button className={styles.btn}>  +8 800 849 480 33</button>
                 </div>
                <tr/>
                <div className={styles.containerSearch}>
                    <div className={styles.logoBlock}>
-                   <img src={logo} />
+                <Link to="/">  <img src={logo1} /> </Link>
+                           
+              
                    </div>
               
                
@@ -31,7 +35,7 @@ const Header = () => {
                     <div className={styles.searchBlockInside}>
                         <input className={styles.searchInput} placeholder="Поиск" />
                         <button className={styles.searchIcon}>
-                        <Search  style={{ color: "green" }} class={styles.searchIconFa}/>
+                        <Search   className={styles.searchIconFa}/>
                             </button> 
                             
                     </div>

@@ -16,7 +16,12 @@ body{
   margin:0 auto;
   font-family: 'Nunito', sans-serif;
 }
-
+@media (max-width:900px){
+  .container{
+    width: 100%;
+    margin:0;
+  }
+}
 
 
 
