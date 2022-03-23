@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './fonts/Nunito/Nunito-Light.ttf';
+import './fonts/Nunito-Medium.ttf';
 import {BrowserRouter as Router,Routes, Route} from 'react-router-dom';
 
 ReactDOM.render(
