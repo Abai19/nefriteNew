@@ -286,7 +286,7 @@ nav a {
     height: 100vh;
     top:0;
     left:-100%;
-    background-color: red;
+    background-color: #00a86b;
     transition: 1s ease;
   }
   .slider.active{
@@ -327,7 +327,7 @@ nav a {
     display:flex;
    justify-content: flex-start;
     width: 100%;
-    color:#00a86b;
+    color:#fff;
     font-size:40px;
   }
   .close {
