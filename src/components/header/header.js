@@ -22,7 +22,7 @@ const Header = () => {
                  
                         <button className={styles.btn}>  +8 800 849 480 33</button>
                 </div>
-               <tr/>
+               
                <div className={styles.containerSearch}>
                    <div className={styles.logoBlock}>
                 <Link to="/">  <img src={logo1} /> </Link>
