@@ -18,6 +18,11 @@
     transition-duration: 0.4s;
     border:2px solid #00a86b;
     margin-bottom: 20px;
+    border: 1px solid #00a86b;
+}
+.btn:hover{
+    background-color: #fff;
+    color:#00a86b;
 }
 .flowerBlock a{
     text-decoration: none;
@@ -48,6 +53,7 @@
     color: #2d2d2d;
     text-decoration: line-through;
     opacity: 0.33;
+    font-size:15px;
 }
 @media (max-width:900px){
     .flowerBlock{

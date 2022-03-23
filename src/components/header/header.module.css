@@ -314,6 +314,9 @@ nav a {
     text-decoration: none;
     color:#fff;
   }
+  .slider a:hover{
+    color:#fff;
+  }
   .menuIcon .menu{
     display: block;
     background:#00a86b;
@@ -328,10 +331,9 @@ nav a {
    justify-content: flex-start;
     width: 100%;
     color:#fff;
-    font-size:40px;
   }
   .close {
-    font-size:40px;
+    font-size:40px!important;
   }
   .logoBlock{
     width: 45%;
