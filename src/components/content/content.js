@@ -3,7 +3,7 @@ import img from '../../img/img.png';
 import flower from '../../img/flower.jpg';
 import rose from '../../img/rose.jpg';
 import hrizan from '../../img/hrizan.jpg';
-import romah from '../../img/romah.png'
+import romah from '../../img/romah.jpg'
 import ContentBlock from './contentBlock';
 
 const Content = () => {
