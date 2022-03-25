@@ -1,9 +1,10 @@
-import  styles from './content.module.css'
-import img from '../../img/img.png'
-import flower from '../../img/flower.jpg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-
+import  styles from './content.module.css';
+import img from '../../img/img.png';
+import flower from '../../img/flower.jpg';
+import rose from '../../img/rose.jpg';
+import hrizan from '../../img/hrizan.jpg';
+import romah from '../../img/romah.png'
+import ContentBlock from './contentBlock';
 
 const Content = () => {
     return(
@@ -14,50 +15,13 @@ const Content = () => {
                 <h3> Цветы</h3>
             <hr/>
             </div>
-
+         
             <div className={styles.flowerMain}>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500тг</span> <a href="#" > 10000тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
+            <ContentBlock title="Пионы" img={flower}/>
+            <ContentBlock title="Розы" img={rose}/>
+            <ContentBlock title="Хризантемы" img={hrizan}/>
+            <ContentBlock title="Ромашки" img={romah}/>
             </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            </div>
-
 
             <div className={styles.flowerWord}>
                 <h3> Летние товары</h3>
@@ -65,48 +29,11 @@ const Content = () => {
             </div>
 
             <div className={styles.flowerMain}>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
+            <ContentBlock title="Пионы" img={flower}/>
+            <ContentBlock title="Розы" img={rose}/>
+            <ContentBlock title="Хризантемы" img={hrizan}/>
+            <ContentBlock title="Ромашки" img={romah}/>
             </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p> <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            </div>
-            
             
             <div className={styles.flowerWord}>
                 <h3> Новогодние товары</h3>
@@ -114,46 +41,10 @@ const Content = () => {
             </div>
 
             <div className={styles.flowerMain}>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p><span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
-            <div className={styles.flowerBlock}>
-                <img src={flower}/>
-                <div className={styles.flowerText}>
-                <p>  <b>Пионы</b></p>
-                <p> <span className={styles.oldPrice}>12500 тг</span> <a href="#" > 10000 тг</a> </p>
-                <button className={styles.btn}> <FontAwesomeIcon icon={faCartShopping} 
-                        className={styles.shoppingIconFa} />  В корзину</button>
-                </div>
-                
-            </div>
+            <ContentBlock title="Пионы" img={flower}/>
+            <ContentBlock title="Розы" img={rose}/>
+            <ContentBlock title="Хризантемы" img={hrizan}/>
+            <ContentBlock title="Ромашки" img={romah}/> 
             </div>
        </div>
     )
