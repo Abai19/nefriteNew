@@ -17,10 +17,10 @@ const Content = () => {
             </div>
          
             <div className={styles.flowerMain}>
-            <ContentBlock title="Пионы" img={flower}/>
-            <ContentBlock title="Розы" img={rose}/>
-            <ContentBlock title="Хризантемы" img={hrizan}/>
-            <ContentBlock title="Ромашки" img={romah}/>
+            <ContentBlock title="Пионы" img={flower} oldPrice="23000тг" newPrice="19000тг"/>
+            <ContentBlock title="Розы" img={rose} oldPrice="18000тг" newPrice="14000тг"/>
+            <ContentBlock title="Хризантемы" img={hrizan} oldPrice="13000тг" newPrice="11999тг"/>
+            <ContentBlock title="Ромашки" img={romah} oldPrice="14000тг" newPrice="12999тг"/>
             </div>
 
             <div className={styles.flowerWord}>
@@ -29,10 +29,10 @@ const Content = () => {
             </div>
 
             <div className={styles.flowerMain}>
-            <ContentBlock title="Пионы" img={flower}/>
-            <ContentBlock title="Розы" img={rose}/>
-            <ContentBlock title="Хризантемы" img={hrizan}/>
-            <ContentBlock title="Ромашки" img={romah}/>
+            <ContentBlock title="Пионы" img={flower} oldPrice="23000тг" newPrice="19000тг"/>
+            <ContentBlock title="Розы" img={rose} oldPrice="18000тг" newPrice="14000тг"/>
+            <ContentBlock title="Хризантемы" img={hrizan} oldPrice="13000тг" newPrice="11999тг"/>
+            <ContentBlock title="Ромашки" img={romah} oldPrice="14000тг" newPrice="12999тг"/>
             </div>
             
             <div className={styles.flowerWord}>
@@ -41,10 +41,10 @@ const Content = () => {
             </div>
 
             <div className={styles.flowerMain}>
-            <ContentBlock title="Пионы" img={flower}/>
-            <ContentBlock title="Розы" img={rose}/>
-            <ContentBlock title="Хризантемы" img={hrizan}/>
-            <ContentBlock title="Ромашки" img={romah}/> 
+            <ContentBlock title="Пионы" img={flower} oldPrice="23000тг" newPrice="19000тг"/>
+            <ContentBlock title="Розы" img={rose} oldPrice="18000тг" newPrice="14000тг"/>
+            <ContentBlock title="Хризантемы" img={hrizan} oldPrice="13000тг" newPrice="11999тг"/>
+            <ContentBlock title="Ромашки" img={romah} oldPrice="14000тг" newPrice="12999тг"/>
             </div>
        </div>
     )
