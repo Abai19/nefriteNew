@@ -1,5 +1,5 @@
 import styles from './about.module.css'
-import pion from './../../img/pion3.jpg'
+import pion from '../../img/pion.jpg'
 const About = () => {
     return (
         <div>

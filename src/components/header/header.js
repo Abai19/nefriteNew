@@ -64,7 +64,7 @@ const Header = () => {
                        </Link>
                    </li>
                    <li>
-                       <Link to='/'>
+                       <Link to='/products'>
                             Цветы
                        </Link>
                        <ul className={styles.submenu}>
