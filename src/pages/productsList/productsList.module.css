@@ -45,6 +45,17 @@
    width: 100%;
 
 }
+.leftBlockFlex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration:none;
+    margin-top:10px;
+}
+.leftBlockFlex p{
+ 
+   margin:0px;
+}
 .flowerText{
     text-align: center;
     color:#2d2d2d;
