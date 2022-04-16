@@ -19,14 +19,14 @@ import photo from '../../img/pion.jpg';
                 <div className={styles.leftBlock}>
                     <p>Популярные товары</p>
                     <div>
-                        <Link to="/">
-                            
+                     <Link to="/" className={styles.leftBlockFlex}    >
+                            <div>
                             <p>1001 роза</p>
-                            </Link>
                             <p>70000тг</p>
+                                </div>
+                                
+                            <div><img src={photo} className={styles.image}/></div>
                         
-                             <Link to='/'>
-                            <img src={photo} className={styles.image}/>
                             </Link>
                        
                     </div>
