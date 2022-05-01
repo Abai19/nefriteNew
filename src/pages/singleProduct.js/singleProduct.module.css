@@ -1,0 +1,94 @@
+.container{
+    width: 90%;
+    margin:0 auto;
+    font-family: 'Nunito', sans-serif;
+}
+.block{
+    display:flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.oldPrice{
+    color: #2d2d2d;
+    text-decoration: line-through;
+    opacity: 0.33;
+    font-size:16px;
+}
+.newPrice {
+    color:#00a86b;
+    font-size:17px;
+}
+.feedback{
+    color:#00a86b;
+    display: flex;
+}
+.feedback a {
+    margin-left: 20px;
+}
+.btnCounter{
+    background:#00a86b;
+    color: white;
+    border:none;
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+}
+.leftBlock{
+    width: 40%;
+}
+.rightBlock{
+    width: 50%;
+    padding-left: 30px;
+}
+.btnCounter:hover{
+    background: white;
+    color: #00a86b;
+    border: 1px solid #00a86b;
+}
+.inputCounter{
+    border: 1px solid #CBCBCC;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+}
+.bottomBlock  {
+    display: flex;
+    align-items: baseline;
+}
+.bottomBlock p{
+    margin-bottom: 0px;
+    margin-top: 16px;
+}
+.mlForBottomBlock{
+    margin-left: 11px;
+}
+.imageBox{
+    max-width: 100%;
+}
+.mt {
+    margin-top: 30px;
+}
+.ml{
+    margin-left: 28px;
+}
+@media (max-width:900px){
+    .block{
+        display: block;
+    }
+    .leftBlock{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .rightBlock{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .mt {
+        margin-top: 15px;
+    }
+
+    .feedback{
+        color:#00a86b!important;
+
+    }
+}

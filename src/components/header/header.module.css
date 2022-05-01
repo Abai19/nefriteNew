@@ -25,8 +25,9 @@
 .searchInput {
     outline: none; /* Убираем свечение в Chrome и Safari */
     vertical-align: middle; /* Выравнивание по середине */
-    height: 28px;
-    width:100%
+    width:100%;
+    border: 1px solid #dedede;
+    height: 30px
    }
 .searchIcon {
     position: absolute;
@@ -171,15 +172,18 @@ nav a {
     transform-origin: 0% 0%;
     transform: rotateX(-90deg);
     transition: .3s linear;  
-    width: 15%!important;
+    width: 10%!important;
     float:left;
     margin:0!important;
     padding:0!important;
     border: 1px solid #CBCBCC;
    
   }
-  .submenu li {position: relative;
+  .submenu li {
+      position: relative;
     background: white;
+      margin: 10px!important;
+
   }
   .submenu li a {
     color: #282828;
@@ -275,6 +279,9 @@ nav a {
   .container_content{
     justify-content: flex-start;
   }
+    .svgIcon{
+        color:#fff;
+    }
   .shoppingCartBtn{
     position:absolute;
     top:0;
@@ -288,6 +295,7 @@ nav a {
     left:-100%;
     background-color: #00a86b;
     transition: 1s ease;
+      z-index: 999;
   }
   .slider.active{
     left:0;

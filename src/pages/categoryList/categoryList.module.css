@@ -1,5 +1,11 @@
 .container{
     margin-top: 20px;
+    width: 90%;
+    margin:0 auto;
+    font-family: 'Nunito', sans-serif;
+}
+.mainBlock{
+    display:flex;
 }
 .flowerWord{
     margin-top: 30px;
@@ -33,13 +39,22 @@
     box-shadow: 0 8px 21px -19px rgb(0 0 0 / 75%);
     background: #fff;
     width: 23%;
-    text-align: center;
-    margin-top:20px;
 }
 .flowerBlock img{
    max-width: 100%;
    width: 100%;
 
+}
+.leftBlockFlex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration:none;
+    margin-top:10px;
+}
+.leftBlockFlex p{
+ 
+   margin:0px;
 }
 .flowerText{
     text-align: center;
@@ -57,9 +72,35 @@
     opacity: 0.33;
     font-size:15px;
 }
+.leftBlock{
+    position: relative;
+    float:left;
+    width: 20%;
+}
+.image{
+    width: 50px;
+    height: 50px;
+    margin-right:20px;
+}
+.rightBlock{
+    position: relative;
+    float:right;
+    width: 79%;
+}
 @media (max-width:900px){
     .flowerBlock{
         width: 48%;
         margin-top:10px;
+    }
+    .rightBlock{
+        width: 100%;
+
+    }
+    .mainBlock{
+        flex-direction: column-reverse;
+    }
+    .leftBlock{
+
+        width: 100%;
     }
 }
