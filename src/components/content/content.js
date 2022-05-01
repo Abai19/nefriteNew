@@ -5,7 +5,11 @@ import data from '../../data.js'
 
 const Content = () => {
     const Flowers = data.flowers.map( item=>{
-        return <ContentBlock key={item.id} title={item.title} img={item.img} oldPrice={item.oldPrice} newPrice={item.newPrice}/>
+        return (
+       
+        <ContentBlock key={item.id} title={item.title} img={item.img} oldPrice={item.oldPrice} newPrice={item.newPrice}/>
+ 
+        )
     })
     const summerStaff = data.flowers.map( item=>{
         return <ContentBlock key={item.id} title={item.title} img={item.img} oldPrice={item.oldPrice} newPrice={item.newPrice}/>

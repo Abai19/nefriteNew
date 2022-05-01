@@ -6,7 +6,7 @@ const ContentBlock = (props)=>{
     return (
         
         <div className={styles.flowerBlock}>
-        <Link to="/">
+        <Link to="singleProduct">
         <img src={`../images/${props.img}`}/>
         <div className={styles.flowerText}>
         <p> <b>{props.title}</b></p>

@@ -6,12 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import './fonts/Nunito-SemiBold.ttf';
 import ProductsList from './pages/productsList/productsList.js';
 import {BrowserRouter as Router,Routes, Route, BrowserRouter} from 'react-router-dom';
+import SingleProduct from './pages/productsList/singleProduct/singleProduct';
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App/>}/>
       <Route path='products' element={<ProductsList/>}/>
+      <Route path='singleProduct' element={<SingleProduct/>}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
