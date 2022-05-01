@@ -19,7 +19,7 @@ const ContentBlock = (props)=>{
         localStorage.setItem('item', JSON.stringify(insert));
         setInsert(insert)
     },[insert])
-console.log(insert);
+
     // useEffect((e)=>{
     //     e.preventDefault();
     //     let id = e.target.dataset.id;
@@ -34,7 +34,7 @@ console.log(insert);
         <img src={`https://nephrite.herokuapp.com${props.image}`}/>
         <div className={styles.flowerText}>
         <p> <b>{props.title}</b></p>
-        <p> <span className={styles.oldPrice}>{props.old_price}</span> <a href="#" > {props.new_price}</a> </p>
+        <p> <span className={styles.oldPrice}>{props.old_price}</span> <span className={styles.newPrice} > {props.new_price}</span> </p>
         </div> 
         </Link>
 

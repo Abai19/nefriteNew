@@ -5,12 +5,13 @@ import VisitInfo from './components/visitInfo/visitInfo.js';
 import Form from './components/form/form.js';
 import About from './components/about/about.js';
 import Footer from'./components/footer/footer.js';
-function App() {
+import React from "react";
+const App=() =>{
   return (
     <>
     <Header/>
     <div className='container'>
-    <Content/>
+      <Content/>
     <VisitInfo/>
     <Form/>
     <About/>

@@ -7,13 +7,24 @@ import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {MenuOutlined, Close, WhatsApp, Instagram, Search} from "@material-ui/icons";
 import {Link} from 'react-router-dom'
+import FindProduct from "../../pages/findProduct/findProduct";
 
 const Header = () => {
     const  [active,setActive]= useState(false)
     const [data,setData]= useState([])
+    const [inputVal, setInputVal]= useState('')
     const showMenu= ()=> {
         setActive(!active)
     }
+    const onChangeValue=(e)=>{
+        e.preventDefault();
+        setInputVal(e.target.value);
+    }
+    const sendInfo=()=>{
+        alert('hey');
+    }
+
+    console.log(inputVal)
     useEffect(()=>{
             fetch("https://nephrite.herokuapp.com/api/v1/categories/")
                 .then((response) => {
@@ -23,7 +34,7 @@ const Header = () => {
                     setData(data);
                 });
     },[])
-    console.log(data);
+    console.log(active);
         return (
         <>
              <div>
@@ -39,16 +50,17 @@ const Header = () => {
                    <div className={styles.logoBlock}>
                 <Link to="/">  <img src={logo1} /> </Link>
                            
-              
+
+
                    </div>
               
                
                <div className={styles.searchBlock}> 
                     <div className={styles.searchBlockInside}>
-                        <input className={styles.searchInput} placeholder="Поиск" />
-                        <button className={styles.searchIcon}>
+                        <input className={styles.searchInput} onChange={onChangeValue} placeholder="Поиск" />
+                        <Link to={`/search/${inputVal}`} className={styles.searchIcon} >
                         <Search   className={styles.searchIconFa}/>
-                            </button> 
+                            </Link>
                             
                     </div>
                 </div>
@@ -86,7 +98,7 @@ const Header = () => {
                                {
                                    item.children.map((child,key)=>
                                        <Link to={`/category/${child.id}`}>
-                                           <li key={key}><a>{child.title}</a></li>
+                                           <li key={key}><span style={{fontSize: "14px"}}>{child.title} </span></li>
                                        </Link>
 
 
@@ -100,69 +112,7 @@ const Header = () => {
                            )
 
                        }
-                   {/*    <Link to='/products'>*/}
-                   {/*         Цветы*/}
-                   {/*    </Link>*/}
-                   {/*    <ul className={styles.submenu}>*/}
-                   {/*        <li><a>Декоративные</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Ритуальные</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Праздничные</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Дерево</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Листья</a></li>*/}
-                   {/*    </ul>*/}
-                   {/*</li>*/}
-                   {/*<li>*/}
-                   {/*    <Link to='/'>*/}
-                   {/*         Новогодние*/}
-                   {/*    </Link>*/}
-                   {/*    <ul className={styles.submenu}>*/}
-                   {/*        <li><a>Ёлки</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Игрушки</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Водопад</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Дождик</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Хвойные ветки</a></li>*/}
-                   {/*    </ul>*/}
-                   {/*</li>*/}
-                   {/*<li>*/}
-                   {/*    <Link to='/'>*/}
-                   {/*         Летние товары*/}
-                   {/*    </Link>*/}
-                   {/*    <ul className={styles.submenu}>*/}
-                   {/*        <li><a>Бассейн</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Болоны</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Очки</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Шапки</a></li>*/}
-                   {/*       */}
-                   {/*    </ul>*/}
-                   {/*</li>*/}
-                   {/*<li>*/}
-                   {/*    <Link to='/'>*/}
-                   {/*         Разное*/}
-                   {/*    </Link>*/}
-                   {/*    <ul className={styles.submenu}>*/}
-                   {/*        <li><a>Электро-самокат</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Самокат</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Героскутер</a> </li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li> <a>Мячи</a></li>*/}
-                   {/*        <hr/>*/}
-                   {/*        <li><a>Ролики</a></li>*/}
-                   {/*        <li><a>Скейтборд</a></li>*/}
-                   {/*    </ul>*/}
-                   {/*</li>*/}
+
                    <li>
                        <Link to='/'>
                             Доставка

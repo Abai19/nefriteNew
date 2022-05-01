@@ -1,0 +1,9 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.flowerMain{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}

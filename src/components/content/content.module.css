@@ -28,6 +28,11 @@
     text-decoration: none;
     color:#00a86b
 }
+
+.newPrice{
+    text-decoration: none;
+    color:#00a86b
+}
 .flowerBlock{
     border: 1px solid #dedede;
     box-shadow: 0 8px 21px -19px rgb(0 0 0 / 75%);
@@ -35,6 +40,7 @@
     width: 23%;
     text-align: center;
     margin-top:20px;
+    text-decoration: none;
 }
 .flowerBlock img{
    max-width: 100%;
@@ -51,6 +57,7 @@
     flex-wrap:wrap;
     justify-content: space-between;
 }
+
 .oldPrice{
     color: #2d2d2d;
     text-decoration: line-through;

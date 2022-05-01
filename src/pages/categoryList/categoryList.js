@@ -2,7 +2,6 @@ import {Link, useParams} from "react-router-dom";
 import ContentBlock from "../../components/content/contentBlock";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
-import data from '../../data.js';
 import styles from './categoryList.module.css';
 import photo from '../../img/pion.jpg';
 import {useEffect, useState} from "react";
@@ -21,50 +20,63 @@ import {useEffect, useState} from "react";
      //    return <ContentBlock key={item.id} title={item.title} img={item.img} oldPrice={item.oldPrice} newPrice={item.newPrice}/>
      //
      // })
-    return (
-        <>
-                <Header/>
-                <div className={styles.container}>
-                <div className={styles.mainBlock}>
-                <div className={styles.leftBlock}>
-                    <p>Популярные товары</p>
-                    <div>
-                     <Link to="/" className={styles.leftBlockFlex}    >
-                            <div>
-                            <p>1001 роза</p>
-                            <p>70000тг</p>
-                                </div>
-                                
-                            <div><img src={photo} className={styles.image}/></div>
-                        
-                            </Link>
-                       
-                    </div>
-                </div>
-                <div className={styles.rightBlock}>
-                            <div >
-                        <div className={styles.flowerWord}>
-                            <h3> {}</h3>
-                        <hr/>
-                        </div>
-                    
-                        <div className={styles.flowerMain}>
-                            {data.map(item => {
-                                return <ContentBlock key={item.id} id={item.id} title={item.title} image={item.image} old_price={item.old_price}
-                                                     new_price={item.new_price}/>
-                            })
-                            }
-                        </div>
+     let someArr=[];
 
+     for (let i = 0 ; i<3; i++){
+         let someIndex= Math.floor(Math.random() * data.length);
+         const item = data[someIndex];
+         someArr.push(item);
+     }
+     console.log(someArr);
+
+
+     return <>
+            <Header/>
+            <div className={styles.container}>
+            <div className={styles.mainBlock}>
+            <div className={styles.leftBlock}>
+                <p>Популярные товары</p>
+                <div>
+                    {/*{*/}
+                    {/*    data.map(item=>{*/}
+                    {/*        return <p>{item.id}</p>*/}
+                    {/*  })*/}
+                    {/*  }*/}
+
+                 <Link to="/" className={styles.leftBlockFlex}    >
+                        <div>
+                        <p>Пионы</p>
+                        <p>70000тг</p>
                             </div>
-                </div>
+
+                        <div><img src={photo} className={styles.image}/></div>
+
+                 </Link>
 
                 </div>
-                </div>
-          
-                <Footer/>
-        </>
-    
-    )
+            </div>
+            <div className={styles.rightBlock}>
+                        <div >
+                    <div className={styles.flowerWord}>
+                        <h3> {}</h3>
+                    <hr/>
+                    </div>
+
+                    <div className={styles.flowerMain}>
+                        {data.map(item => {
+                            return <ContentBlock key={item.id} id={item.id} title={item.title} image={item.image} old_price={item.old_price}
+                                                 new_price={item.new_price}/>
+                        })
+                        }
+                    </div>
+
+                        </div>
+            </div>
+
+            </div>
+            </div>
+
+            <Footer/>
+    </>
 }
 export default CategoryList;

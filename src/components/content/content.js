@@ -1,7 +1,6 @@
 import  styles from './content.module.css';
 import img from '../../img/img.png';
 import ContentBlock from './contentBlock';
-import data from '../../data.js'
 import {useEffect, useState} from "react";
 
 const Content = () => {
@@ -35,8 +34,6 @@ const Content = () => {
             .then(response=>setNewYearStuff(response))
 
     },[]);
-
-    console.log(flowers);
     return(
        <div className={styles.container}>
             <img src={`https://nephrite.herokuapp.com${mainImg.image}`} className={styles.mainImg}/>

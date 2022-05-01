@@ -96,7 +96,7 @@ const SingleProduct = () => {
 
                                     <div>
                                         <div className={`${styles.labelBlock} ${styles.mt}`}>
-                                            <span> Доступность: </span><span>13</span>
+                                            <span> Доступность: </span><span style={{color:"red"}}>{product.quantity}</span>
                                         </div>
 
 
