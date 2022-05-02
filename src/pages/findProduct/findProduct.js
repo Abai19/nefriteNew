@@ -8,7 +8,7 @@ import styles from "../../components/content/content.module.css";
 
 const FindProduct= ()=> {
         const [data,setData]= useState([]);
-const {title}= useParams();
+        const {title}= useParams();
         useEffect(()=>{
                 fetch(`https://nephrite.herokuapp.com/api/v1/products/?title=${title}`)
                     .then(data=> data.json())
@@ -23,7 +23,7 @@ const {title}= useParams();
                        <h1>Результат поиска по: <span>{title}</span></h1>
                        <div className={style.flowerMain}>
 
-                               {data.length>1?
+                               {data.length>=1?
                                    data.map(item => {
                                                return <ContentBlock key={item.id} id={item.id} title={item.title} image={item.image} old_price={item.old_price}
                                                                     new_price={item.new_price}/>

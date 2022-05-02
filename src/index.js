@@ -13,7 +13,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path='/' element={<App/>}/>
-      <Route path='/category/:id' element={<CategoryList/>}/>
+      <Route path='/category/:id/:title' element={<CategoryList/>}/>
       <Route path='/product/:id' element={<SingleProduct/>}/>
       <Route path='/search/:title' element={<FindProduct/>}/>
       <Route path='*' element={<NotFound/>}/>

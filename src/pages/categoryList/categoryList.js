@@ -7,8 +7,7 @@ import photo from '../../img/pion.jpg';
 import {useEffect, useState} from "react";
 
  const CategoryList = ()=>{
-     const {id} = useParams();
-
+     const {id,title} = useParams();
     const [data, setData]= useState([]);
      useEffect(()=>{
          fetch(`https://nephrite.herokuapp.com/api/v1/products/by-category/${id}/`)
@@ -27,9 +26,9 @@ import {useEffect, useState} from "react";
          const item = data[someIndex];
          someArr.push(item);
      }
-     console.log(someArr);
 
 
+    console.log(data);
      return <>
             <Header/>
             <div className={styles.container}>
@@ -58,7 +57,7 @@ import {useEffect, useState} from "react";
             <div className={styles.rightBlock}>
                         <div >
                     <div className={styles.flowerWord}>
-                        <h3> {}</h3>
+                        <h3> {title}</h3>
                     <hr/>
                     </div>
 

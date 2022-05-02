@@ -52,6 +52,14 @@
     color:#2d2d2d;
     font-weight: bold;
 }
+.btnMore{
+    color:#fff;
+    background: #00a86b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top:40px;
+}
 .flowerMain{
     display:flex;
     flex-wrap:wrap;

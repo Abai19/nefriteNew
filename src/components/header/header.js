@@ -6,13 +6,15 @@ import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {MenuOutlined, Close, WhatsApp, Instagram, Search} from "@material-ui/icons";
-import {Link} from 'react-router-dom'
-import FindProduct from "../../pages/findProduct/findProduct";
+import {Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 
 const Header = () => {
-    const  [active,setActive]= useState(false)
-    const [data,setData]= useState([])
-    const [inputVal, setInputVal]= useState('')
+    const  [active,setActive]= useState(false);
+    const [data,setData]= useState([]);
+    const [inputVal, setInputVal]= useState('');
+
+    const navigate = useNavigate();
     const showMenu= ()=> {
         setActive(!active)
     }
@@ -20,11 +22,11 @@ const Header = () => {
         e.preventDefault();
         setInputVal(e.target.value);
     }
-    const sendInfo=()=>{
-        alert('hey');
+    const onKeyValue =(e)=>{
+        if(e.key==="Enter"){
+            navigate(`/search/${inputVal}`)
+        }
     }
-
-    console.log(inputVal)
     useEffect(()=>{
             fetch("https://nephrite.herokuapp.com/api/v1/categories/")
                 .then((response) => {
@@ -57,7 +59,7 @@ const Header = () => {
                
                <div className={styles.searchBlock}> 
                     <div className={styles.searchBlockInside}>
-                        <input className={styles.searchInput} onChange={onChangeValue} placeholder="Поиск" />
+                        <input className={styles.searchInput} onChange={onChangeValue} onKeyPress={onKeyValue}   placeholder="Поиск" />
                         <Link to={`/search/${inputVal}`} className={styles.searchIcon} >
                         <Search   className={styles.searchIconFa}/>
                             </Link>
@@ -91,13 +93,13 @@ const Header = () => {
                        {
                            data.map((item,key)=>
                                <li key={key}>
-                                <Link to={`/category/${item.id}`}> {item.title}
+                                <Link to={`/category/${item.id}/${item.title}`}> {item.title}
                                </Link>
                                    <FontAwesomeIcon icon={faAngleDown} style={{marginLeft:"8px"}} className={styles.svgIcon}/>
                                    <ul className={styles.submenu}>
                                {
                                    item.children.map((child,key)=>
-                                       <Link to={`/category/${child.id}`}>
+                                       <Link to={`/category/${child.id}/${child.title}`} key={key}>
                                            <li key={key}><span style={{fontSize: "14px"}}>{child.title} </span></li>
                                        </Link>
 
