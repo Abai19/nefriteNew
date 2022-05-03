@@ -7,11 +7,16 @@
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     transition-duration: 0.4s;
-    border:2px solid #00a86b;
     margin-bottom: 20px;
     border: 1px solid #00a86b;
+}
+.spanText{
+    color: #fff;
 }
 .btn:hover{
     background-color: #fff;
     color:#00a86b;
+}
+.div a{
+    color:#fff
 }

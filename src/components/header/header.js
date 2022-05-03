@@ -15,6 +15,7 @@ const Header = () => {
     const [inputVal, setInputVal]= useState('');
 
     const navigate = useNavigate();
+    console.log(navigate);
     const showMenu= ()=> {
         setActive(!active)
     }
@@ -93,13 +94,13 @@ const Header = () => {
                        {
                            data.map((item,key)=>
                                <li key={key}>
-                                <Link to={`/category/${item.id}/${item.title}`}> {item.title}
+                                <Link to={`/category/${item.id}/${item.title}`} onClick={showMenu}> {item.title}
                                </Link>
                                    <FontAwesomeIcon icon={faAngleDown} style={{marginLeft:"8px"}} className={styles.svgIcon}/>
                                    <ul className={styles.submenu}>
                                {
                                    item.children.map((child,key)=>
-                                       <Link to={`/category/${child.id}/${child.title}`} key={key}>
+                                       <Link to={`/category/${child.id}/${child.title}`} key={key} onClick={showMenu}>
                                            <li key={key}><span style={{fontSize: "14px"}}>{child.title} </span></li>
                                        </Link>
 
