@@ -8,6 +8,9 @@
     justify-content: center;
     padding-top: 40px;
 }
+.someDiv{
+    display: flex;
+}
 .oldPrice{
     color: #2d2d2d;
     text-decoration: line-through;

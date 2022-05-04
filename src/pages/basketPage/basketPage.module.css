@@ -1,0 +1,27 @@
+.table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.addBlock{
+    border-top: 2px solid #00a86b;
+    background: #fff;
+}
+thead{
+    background: #00a86b;
+    color: #fff;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+
+}
+td {
+    background: #fff;
+}
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

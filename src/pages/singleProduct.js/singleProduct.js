@@ -110,7 +110,10 @@ const SingleProduct = () => {
                                         </div>
                                     </div>
                                     <div className={styles.mt}>
-                                        <Basket/>
+                                        <div className={styles.someDiv}>
+                                            <Basket id={id}/>
+                                        </div>
+
                                     </div>
 
                                 </div>

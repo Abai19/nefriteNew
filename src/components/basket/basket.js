@@ -5,12 +5,16 @@ import {faCartShopping} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 const Basket = ({id})=> {
     return (
-        <div>
-            <Link to={`shop-card/${id}`} className={styles.btn}> <FontAwesomeIcon icon={faCartShopping}  className={styles.spanText} />
+        <>
+
+            <div className={styles.block}>
+
+
+            <Link to={`/shop-card/${id}`} className={styles.btn}> <FontAwesomeIcon icon={faCartShopping}  className={styles.spanText} />
                 В корзину
             </Link>
-        </div>
-
+            </div>
+            </>
     )
 }
 export default Basket;
