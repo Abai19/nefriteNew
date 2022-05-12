@@ -31,7 +31,7 @@ const ContentBlock = (props)=>{
         
         <div className={styles.flowerBlock}>
         <Link to={`/product/${props.id}`}>
-        <img src={`https://nephrite.herokuapp.com${props.image}`}/>
+        <img src={`${props.image}`}/>
         <div className={styles.flowerText}>
         <p> <b>{props.title}</b></p>
         <p> <span className={styles.oldPrice}>{props.old_price}</span> <span className={styles.newPrice} > {props.new_price}</span> </p>

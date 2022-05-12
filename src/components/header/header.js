@@ -29,7 +29,7 @@ const Header = () => {
         }
     }
     useEffect(()=>{
-            fetch("https://nephrite.herokuapp.com/api/v1/categories/")
+            fetch("https://nephrite-store.herokuapp.com/api/v1/categories/")
                 .then((response) => {
                     return response.json();
                 })

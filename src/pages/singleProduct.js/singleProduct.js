@@ -11,7 +11,7 @@ const SingleProduct = () => {
     const {id}= useParams();
 
         useEffect(()=>{
-            fetch(`https://nephrite.herokuapp.com/api/v1/products/${id}/`)
+            fetch(`https://nephrite-store.herokuapp.com/api/v1/products/${id}/`)
                 .then((response) => {
                     return response.json();
                 })
@@ -36,7 +36,7 @@ const SingleProduct = () => {
 
                             <div className={styles.block}>
                                 <div className={styles.leftBlock}>
-                                    <img src={`https://nephrite.herokuapp.com${product.image}`}  className={styles.imageBox} alt=""/>
+                                    <img src={`${product.image}`}  className={styles.imageBox} alt=""/>
                                 </div>
 
                                 <div className={styles.rightBlock}>

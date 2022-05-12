@@ -17,25 +17,25 @@ const Content = () => {
         navigate(`/category/${id}/${title}`)
 }
     useEffect(()=>{
-        fetch("https://nephrite.herokuapp.com/api/v1/site-images/images/?type=2")
+        fetch("https://nephrite-store.herokuapp.com/api/v1/site-images/images/?type=2")
             .then(data=> data.json())
             .then(response=>setMainImg(response))
 
     },[])
     useEffect(()=>{
-        fetch("https://nephrite.herokuapp.com/api/v1/products/by-category/1/")
+        fetch("https://nephrite-store.herokuapp.com/api/v1/products/by-category/1/")
             .then(data=> data.json())
             .then(response=>setFlowers(response))
 
     },[]);
     useEffect(()=>{
-        fetch("https://nephrite.herokuapp.com/api/v1/products/by-category/16/")
+        fetch("https://nephrite-store.herokuapp.com/api/v1/products/by-category/16/")
             .then(data=> data.json())
             .then(response=>setSummerStuff(response))
 
     },[]);
     useEffect(()=>{
-        fetch("https://nephrite.herokuapp.com/api/v1/products/by-category/4/")
+        fetch("https://nephrite-store.herokuapp.com/api/v1/products/by-category/4/")
             .then(data=> data.json())
             .then(response=>setNewYearStuff(response))
 
@@ -44,7 +44,7 @@ const Content = () => {
 
     return(
        <div className={styles.container}>
-            <img src={`https://nephrite.herokuapp.com${mainImg.image}`} className={styles.mainImg}/>
+            <img src={`https://nephrite-store.herokuapp.com${mainImg.image}`} className={styles.mainImg}/>
 
             <div className={styles.flowerWord}>
                 <h3> Цветы</h3>

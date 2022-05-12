@@ -10,7 +10,7 @@ const FindProduct= ()=> {
         const [data,setData]= useState([]);
         const {title}= useParams();
         useEffect(()=>{
-                fetch(`https://nephrite.herokuapp.com/api/v1/products/?title=${title}`)
+                fetch(`https://nephrite-store.herokuapp.com/api/v1/products/?title=${title}`)
                     .then(data=> data.json())
                     .then(response=>setData(response))
 

@@ -10,7 +10,7 @@ import {useEffect, useState} from "react";
      const {id,title} = useParams();
     const [data, setData]= useState([]);
      useEffect(()=>{
-         fetch(`https://nephrite.herokuapp.com/api/v1/products/by-category/${id}/`)
+         fetch(`https://nephrite-store.herokuapp.com/api/v1/products/by-category/${id}/`)
              .then(data=> data.json())
              .then(response=>setData(response))
 
